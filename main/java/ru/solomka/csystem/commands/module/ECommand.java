@@ -72,7 +72,7 @@ public abstract class ECommand<T extends ECommand<?>> implements ECommandHelper 
             TabViewCommand tabViewCommand = (TabViewCommand) tabViewElement;
 
             if (tabViewCommand.getIndex() == index)
-                return Arrays.stream(tabViewCommand.getToViews()).map(String::valueOf).collect(Collectors.toList());
+                return Arrays.stream(tabViewCommand.getToView()).map(String::valueOf).collect(Collectors.toList());
         }
         return null;
     }
