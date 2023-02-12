@@ -1,0 +1,7 @@
+name: CommandSystem
+version: '${project.version}'
+main: ru.solomka.csystem.Main
+authors: [ Solomka ]
+commands:
+  duel:
+    description: sample command
