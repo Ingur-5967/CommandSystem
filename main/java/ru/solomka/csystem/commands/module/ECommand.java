@@ -67,7 +67,7 @@ public abstract class ECommand<T extends ECommand<?>> implements ECommandHelper 
     }
 
     public List<String> toListViewCommandTabs(int index) {
-        if (toViewElementsWrapper == null) return null;
+        if (toViewElementsWrapper == null) return Collections.emptyList();
         for (Object tabViewElement : toViewElementsWrapper) {
             TabViewCommand tabViewCommand = (TabViewCommand) tabViewElement;
 
